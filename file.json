@@ -1,0 +1,9 @@
+{
+    "Regular Expressions": "on\\s(?P<Content>.+)\\son\\s(?P<Support>.+)",
+    "Texts to test":
+    [
+        "Hello world !",
+        "Welcome to this tutorial on Regular Expressions on python",
+        "I have a meeting with Michael Anderson at 7pm"
+    ]
+}
