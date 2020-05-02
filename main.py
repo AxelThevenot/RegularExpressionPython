@@ -72,17 +72,23 @@ if __name__ == '__main__':
         # 'clear' on Linux or OS X and 'cls' on Windows
         os.system('cls' if os.name == 'nt' else 'clear')
         try:
+            # extract regex from,the json file and texts to test
             regex, tests = get_data(filename)
+            # display the regex
             bold_regex = f'{SGR.bold}{regex}{SGR.reset}'
             output_str = SGR.render_element('Input regex', bold_regex)
+            # for each test
             for test in tests:
+                # apply the regex and return the matches/groups/group_dict
                 result = test_regex(regex, test, SGR.reset, SGR.bg.purple)
                 n_match, groups, group_dict, colored_match = result
+                # display on the console the matches
                 output_str += SGR.render_element('\n Test', test)
                 output_str += SGR.render_element('Colored match',
                                                   colored_match, start='\t')
                 output_str += SGR.render_element('Number of match',
                                                   n_match, start='\t')
+                # display on the console groups and group_dict if exist
                 if len(groups):
                     groups_str = f'({", ".join(groups)})'
                     output_str += SGR.render_element('Groups',
