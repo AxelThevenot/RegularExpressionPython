@@ -1,6 +1,6 @@
 # RegularExpressionPython
 Console Interface to test regular expressions
-Original article : ![Regular Expressions (RegEx): Plainly Explained with Cheat Sheet to Appreciate Them](https://medium.com/@axel.thevenot/regular-expressions-regex-dont-fear-them-it-is-simpler-than-you-think-3a4d6de77058)
+Original article : [Regular Expressions (RegEx): Plainly Explained with Cheat Sheet to Appreciate Them](https://towardsdatascience.com/regular-expressions-regex-dont-fear-them-it-is-simpler-than-you-think-3a4d6de77058)
 
 
 ## Run the programm
